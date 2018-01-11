@@ -112,24 +112,33 @@
 
 // ---------------------------------
 
-// classes
-class Animal {
-// object constructor
-// (executed when new Animal())
-    constructor(sound) {
-        this.sound = sound
-    }
-// class method
-    makeSound() {
-        console.log(this.sound)
-    }
-}
+// // classes
+// class Animal {
+// // object constructor
+// // (executed when new Animal())
+//     constructor(sound) {
+//         this.sound = sound
+//     }
+// // class method
+//     makeSound() {
+//         console.log(this.sound)
+//     }
+// }
+//
+// // old constructor
+// function OldAnimal(sound) {
+//     this.sound = sound
+//     this.breed =
+// }
+//
+// OldAnimal.prototype.makeSound = function () {
+//     console.log(this.sound)
+// }
+//
+// function OldDog (breed) {
+//     OldAnimal.call(this, 'woof')
+//     this.breed = breed
+// }
 
-// old constructor
-function oldAnimal(sound) {
-    this.sound = sound
-}
-
-oldAnimal.prototype.makeSound = function () {
-    console.log(this.sound)
-}
+import { cat as mySuperCat} from './whatever'
+console.log('index.js console log ', mySuperCat)
